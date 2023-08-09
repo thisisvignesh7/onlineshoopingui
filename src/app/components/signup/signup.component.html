@@ -1,0 +1,71 @@
+<div class="main-container">
+  <div class="domain-name">
+    <span class="domain">OnlineShopping</span>
+    <span class="in">.in</span><br />
+  </div>
+
+  <div class="login-form">
+    <h3>Create Account</h3>
+    <form [formGroup]="signupForm" (ngSubmit)="signUpSubmit()">
+      <div class="form-group">
+        <label for="firstName">Your first name</label>
+        <input formControlName="firstName" type="text" class="form-control" />
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Your last name</label>
+        <input formControlName="lastName" type="text" class="form-control" />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input formControlName="email" type="email" class="form-control" />
+      </div>
+
+      <div class="form-group">
+        <label for="contactNumber">Mobile number</label>
+        <input
+          formControlName="contactNumber"
+          type="number"
+          class="form-control"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="userName">Username</label>
+        <input formControlName="userName" type="text" class="form-control" />
+      </div>
+
+      <div class="form-group">
+        <label for="role">Select role</label>
+        <select formControlName="role" class="form-control">
+          <option>user</option>
+          <option>admin</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Enter password</label>
+        <input
+          formControlName="password"
+          type="password"
+          class="form-control"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="password">Re-enter password</label>
+        <input type="password" formControlName="repassword" class="form-control" />
+      </div>
+
+      <div class="d-grid gap-2">
+        <button class="btn continue-btn" type="submit" [disabled]="!signupForm.valid">Continue</button>
+      </div>
+    </form>
+    <p>Already have an account? <a routerLink="/login">Sign in</a></p>
+    <p>
+      By creating an account or logging in, you agree to OnlineShopping's
+      <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice.</a>
+    </p>
+  </div>
+</div>

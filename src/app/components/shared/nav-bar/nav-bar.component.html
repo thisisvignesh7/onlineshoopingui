@@ -1,0 +1,29 @@
+<div class="main-container">
+    <div class="domain-name" routerLink="/dashboard">
+      <h3 >OnlineShopping</h3>
+      <span>.in</span>
+    </div>
+    <div class="serach-bar" *ngIf="!isAdmin">
+      <div class="left-div">
+        <p>ALL</p>
+      </div>
+      <input class="inp" type="text" placeholder="Search OnlineShopping.in"  [(ngModel)]="searchText" />
+      <div class="search-icon" (click)="searchPage()">
+        <i class="fa fa-search" aria-hidden="true" ></i>
+      </div>
+    </div>
+    <div class="dropdown" (click)="toggleDropdown()">
+      <span>Hello,&nbsp;&nbsp;{{ currentUserFullName }}</span>
+      <span>
+        <i class="fa fa-caret-down" aria-hidden="true"></i>
+      </span>
+      <div
+        id="myDropdown"
+        [ngClass]="{ 'dropdown-content': true, show: isDropdownOpen }"
+      >
+        <a (click)="resetPasswordPopup()">Reset Password</a>
+        <a (click)="logOut()">Logout</a>
+      </div>
+    </div>
+  </div>
+  

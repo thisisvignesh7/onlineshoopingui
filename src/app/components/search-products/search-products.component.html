@@ -1,0 +1,20 @@
+<app-nav-bar></app-nav-bar>
+
+<div class="main-container">
+    <h2 *ngIf="!isNoData">Results</h2>
+    <h2 *ngIf="isNoData" style="text-align: center;">No relevant products found with the keyword "{{searchText}}"</h2>
+
+    <div class="products-container" *ngFor="let element of data" (click)="productDetails(element.productId)">
+        <div class="products">
+            <div class="img-div">
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/VGSW/2023/Q2/PC_CategoryCard_758X608_PS5_May-W2_BAU2_1x._SY304_CB587762334_.jpg">
+            </div>
+            <div class="texts-div">
+                <h2>{{element.productName}}</h2>
+                <p style="font-size:16px; font-weight:550; color: rgb(10, 10, 117);">{{element.price | currency:'INR':'symbol-narrow':'4.2-2'}}</p>
+                <i><p>{{element.features}} Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem nam reiciendis molestias at beatae ipsum debitis veniam cum rerum illo harum aut facilis similique, expedita sapiente assumenda necessitatibus eius vel? Enim hic possimus dicta nemo est? Adipisci harum commodi, quaerat praesentium molestiae quisquam quibusdam hic expedita asperiores nam eum explicabo.</p></i>
+            </div>
+        </div>
+    </div>
+   
+</div>

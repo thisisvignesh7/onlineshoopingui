@@ -1,0 +1,55 @@
+
+.left-tab {
+    height: 93vh;
+    width: 25vw;
+    border-right: 2px solid rgb(214, 213, 213);
+    padding: 20px;
+    padding-left: 50px;
+    float: left;
+}
+.left-tab img{
+    cursor: pointer;
+    /* border: 2px solid #D19950; */
+}
+.left-tab-buttons a {
+    border-radius: 20px;
+    width: 185px;
+    margin-top: 20px;
+}
+.left-tab-buttons .btn-warning {
+    margin-left: 10px;
+}
+
+.right-tab {
+    width: 74vw;
+    height: 92vh;
+    display: inline-block;
+    padding: 20px 30px 10px 50px;
+}
+.price {
+    height: auto;
+    border: 2px solid rgb(214, 213, 213);
+    padding: 20px;
+    border-radius: 5px;
+}
+.description {
+    margin-top: 20px;
+    height: auto;
+    border: 2px solid rgb(214, 213, 213);
+    padding: 20px;
+    border-radius: 5px;
+}
+.right-tab h2 {
+    font-size: 40px;
+    padding-bottom: 20px;
+    font-weight: 550;
+    border-bottom: 1px solid rgb(214, 213, 213);
+}
+.right-tab p {
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 550;
+    /* border-bottom: 2px solid rgb(214, 213, 213); */
+}
+
+

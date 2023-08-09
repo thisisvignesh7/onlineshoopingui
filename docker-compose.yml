@@ -1,0 +1,9 @@
+version: "3"
+services:
+  online-shopping-ui:
+    build: .
+    ports:
+      - "8080:4200"
+    volumes:
+      - "/app/node_modules"
+      - ".:/app"

@@ -1,0 +1,38 @@
+<div class="main-container">
+  <div class="domain-name">
+    <span class="domain">OnlineShopping</span>
+    <span class="in">.in</span><br />
+  </div>
+
+  <div class="login-form">
+    <h3>Sign in</h3>
+    <form [formGroup]="loginForm" (ngSubmit)="logIn()">
+      <div class="form-group">
+        <label for="userName">Enter user name or login id</label>
+        <input formControlName="userName" type="text" class="form-control" />
+      </div>
+
+      <div class="form-group">
+        <label for="userName">Enter password</label>
+        <input formControlName="password" type="password" class="form-control" />
+      </div>
+
+      <div class="d-grid gap-2">
+        <button class="btn continue-btn" type="submit" [disabled]="!loginForm.valid">Continue</button>
+      </div>
+    </form>
+    <p>
+      By continuing, you agree to OnlineShopping's
+      <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice.</a>
+    </p>
+  </div>
+
+  <div class="new-user-container">
+    <div class="d-grid gap-2">
+      <span>New to OnlineShopping?</span>
+      <button class="btn" type="button"  routerLink="/signup">
+        Create your OnlineShopping account
+      </button>
+    </div>
+  </div>
+</div>

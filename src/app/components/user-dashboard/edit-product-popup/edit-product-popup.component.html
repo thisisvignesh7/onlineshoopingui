@@ -1,0 +1,44 @@
+<form [formGroup]="updateProductForm" (ngSubmit)="updateProduct()"> 
+<div class="main-container">
+    <div class="header">
+        <span class="header-text">Product Details</span>
+        <span class="header-cross"><i class="fa fa-times" aria-hidden="true" mat-button [mat-dialog-close]="true" title="Close"></i></span>
+    </div>
+    <div class="form-container">
+        
+            <div class="form-row">
+                <div class="col-12 pb-3">
+                  <label for="productName" class="mb-1">Product Name</label>
+                  <input type="text" formControlName="productName" class="form-control">
+                </div>
+                <div class="col-12 pb-3">
+                <label for="noOfOrdersPlaced" class="mb-1">No. of orders placed</label>
+                  <input type="number" formControlName="noOfOrderPlaced" class="form-control">
+                </div>
+                <div class="col-12 pb-3">
+                    <label for="description" class="mb-1">Description</label>
+                  <textarea type="text" formControlName="description" class="form-control" rows="4"></textarea>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-12 pb-3">
+                  <label for="price" class="mb-1">Price (&#8377;)</label>
+                  <input type="number" formControlName="price" class="form-control">
+                </div>
+                <div class="col-12 pb-3">
+                <label for="userName" class="mb-1">Quantity Available</label>
+                  <input type="number" formControlName="quantityAvailable" class="form-control">
+                </div>
+                <div class="col-12 pb-3">
+                    <label for="userName" class="mb-1">Features</label>
+                  <textarea type="text" formControlName="features" class="form-control" rows="4"></textarea>
+                </div>
+            </div>
+        
+    </div>
+    <div class="footer">
+        <button class="btn btn-primary" type="submit" [disabled]="!updateProductForm.valid">Update Product</button>
+    </div>
+</div>
+</form>

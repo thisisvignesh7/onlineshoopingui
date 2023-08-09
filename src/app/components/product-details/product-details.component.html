@@ -1,0 +1,28 @@
+<app-nav-bar></app-nav-bar>
+<div class="main-container">
+    <div class="left-tab">
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/VGSW/2023/Q2/PC_CategoryCard_758X608_PS5_May-W2_BAU2_1x._SY304_CB587762334_.jpg">
+        <div class="left-tab-buttons">
+            <a  class="btn btn-secondary">Add to cart</a>
+            <a  class="btn btn-warning">Buy Now</a>
+        </div>
+    </div>
+
+    <div class="right-tab">
+        <div class="price">
+            <h2>{{productName}}</h2>
+            <p>{{price | currency:'INR':'symbol-narrow':'4.2-2'}}</p>
+            <i>
+                <p *ngIf="productStatus === 'OUT OF STOCK'" class="text-danger">{{productStatus}}</p>
+                <p *ngIf="productStatus !== 'OUT OF STOCK'" class="text-warning">{{productStatus}}</p>
+            </i>
+        </div>
+        
+        <div class="description">
+            <i><p>Description</p></i>
+            <i><h3>{{description}} Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem modi animi fugit odio eveniet illum ut autem dolor dolores explicabo soluta, unde repudiandae earum sapiente ipsum! Neque, ex. Quam, enim? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur vitae commodi, sunt vel itaque quasi minima, esse magni soluta at id, culpa facilis vero illo cumque laboriosam incidunt iure deserunt est. Consequuntur doloribus soluta magni rerum voluptate cupiditate maiores illum, vitae rem aspernatur animi esse assumenda temporibus ex quidem nisi laudantium debitis magnam odit a? Quis quas inventore commodi iure, laboriosam excepturi iste culpa facere, nulla libero aut quisquam rerum ex doloribus pariatur dolorum ipsa tenetur quod? Ut corporis impedit distinctio. Natus necessitatibus pariatur architecto! Quidem, assumenda itaque. Nostrum harum odit in qui laborum vel consequuntur minima! Iste, soluta voluptate?</h3></i>
+            <i><p>Features</p></i>
+            <i><h3>{{features}} Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora enim ea iste eligendi aliquid rerum itaque cupiditate distinctio est. Harum vitae earum culpa, nam dolorem eum minima ipsam doloribus ea nostrum! Expedita labore rem reiciendis, laudantium aliquid maiores quo magni tenetur accusantium quod eius voluptate, at libero laboriosam exercitationem deleniti incidunt! Dolores eum possimus quas aspernatur cumque eaque quod ab ducimus ratione reprehenderit esse illum, soluta consequatur tempora, neque asperiores, alias quisquam? Facere quos maiores voluptas magni animi. Voluptatibus asperiores eligendi facilis vero voluptatum libero laudantium, quaerat dolor consequuntur cupiditate aut dolore eius quia temporibus! Accusantium voluptates fugit quia explicabo?</h3></i>
+        </div>
+    </div>
+</div>

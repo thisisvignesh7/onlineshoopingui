@@ -1,0 +1,81 @@
+.main-container {
+  width: 30vw;
+  height: auto;
+  margin: 0px auto;
+  margin-top: 20px;
+}
+.domain-name {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.domain-name .domain {
+  font-size: 25px;
+  font-weight: bold;
+}
+.domain-name .in {
+  color: orange;
+  font-weight: 500;
+}
+.login-form {
+  border: 1px solid #e2e2e2;
+  border-radius: 7px;
+  padding: 10px 40px 10px 40px;
+  margin: 5px 100px;
+}
+.login-form h3 {
+  font-size: 25px;
+}
+.login-form label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.login-form input, select {
+  margin-bottom: 10px;
+  height: 35px;
+  font-size: 16px;
+}
+.continue-btn {
+  margin-top: 10px;
+  background-color: #ffd814;
+  border: 2px solid #ffd814;
+  height: 35px;
+  font-size: 13px;
+}
+.continue-btn:hover {
+  background-color: #ccac0e;
+  border: 2px solid #ccac0e;
+}
+.login-form p {
+  margin-top: 10px;
+  font-size: 12px;
+}
+.login-form p a {
+  color: rgb(69, 69, 204);
+  text-decoration: none;
+}
+.login-form p a:hover {
+  color: brown;
+  text-decoration: underline;
+}
+.new-user-container {
+  margin: 0px auto;
+  width: 370px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.new-user-container span {
+  font-size: 11px;
+}
+.new-user-container .btn {
+  border: 1px solid #e2e2e2;
+  height: 35px;
+  font-size: 12.5px;
+}
+.new-user-container .btn:hover {
+  background-color: rgb(238, 237, 237);
+}
+.login-form p a {
+  cursor: pointer;
+}
